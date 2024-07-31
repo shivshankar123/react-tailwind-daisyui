@@ -14,7 +14,6 @@ function Home() {
           border="ring ring-primary ring-offset-base-100 ring-offset-2"
         />
       </div>
-
       <Footer />
     </div>
   );

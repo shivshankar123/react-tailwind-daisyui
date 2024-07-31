@@ -1,5 +1,3 @@
-import React from "react";
-
 function Header() {
   return (
     <header className="bg-primary text-white shadow-lg">
@@ -21,14 +19,19 @@ function Header() {
           >
             Services
           </a>
-          <a
-            href="#contact"
-            className="text-lg font-semibold hover:text-gray-300"
-          >
-            Contact
-          </a>
+
+          <details className="dropdown">
+            <summary className="btn btn-secondary">Register</summary>
+            <ul className="menu dropdown-content bg-gradient-to-r from-purple-400 via-pink-300 to-red-300 rounded-lg z-[1] w-52 p-0 shadow-lg">
+              <li>
+                <a>Sign Up</a>
+              </li>
+              <li>
+                <a>Sign In</a>
+              </li>
+            </ul>
+          </details>
         </nav>
-        <button className="btn btn-secondary">Get Started</button>
       </div>
     </header>
   );
